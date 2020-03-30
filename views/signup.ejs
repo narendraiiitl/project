@@ -1,0 +1,20 @@
+<%- include ("partials/header")%>
+
+<script src="/js/signup.js">
+</script> 
+<h2>SIGN UP</h2>
+<form action="/signup" method="post">
+    <div>Username <input type="text" name="username" required></div>
+    <div>Email <input type="email" name="email" required></div>
+    <div>Password <input type="password" name="password" required id="txtNewPassword" /></div>
+    <div>Confirm Password <input type="password" name="confirmpassword" required id="txtConfirmPassword"
+            onChange="checkPasswordMatch();" /></div>
+    </div>
+    <div class="registrationFormAlert" id="divCheckPasswordMatch">
+    </div>
+    <div><button type="submit">SUBMIT</button>
+</form>
+
+
+
+<%- include ("partials/footer")%>
